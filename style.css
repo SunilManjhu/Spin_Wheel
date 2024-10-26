@@ -1,33 +1,50 @@
 /* Center everything */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .game-container {
-    text-align: center;
-    position: relative; /* Make container relative */
-  }
-  
-  /* Style for the arrow icon */
-  #arrow {
-    font-size: 50px;
-    transform-origin: center;
-    transition: transform 2s ease;
-    z-index: 1; /* Ensures arrow stays behind button */
-  }
-  
-  /* Style for the button */
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2; /* Ensures button is on top */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.game-container {
+  text-align: center;
+  position: relative;
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Style for the arrow icon */
+#arrow {
+  font-size: 50px;
+  transform-origin: center;
+  transition: transform 2s ease;
+  z-index: 1;
+}
+
+/* Style for buttons */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* Style for the theme toggle button */
+#theme-toggle {
+  margin-top: 10px;
+}
