@@ -8,13 +8,6 @@ const directions = [
 
 let spinCounter = 0; // Variable to track the number of spins
 
-function spinArrow() {
-
-
-  // ... (rest of the spinArrow function remains the same)
-}
-
-
 /**
  * Spins the arrow element to a random direction with a fixed number of rotations.
  * Each spin starts from a neutral position to maintain a consistent effect.
