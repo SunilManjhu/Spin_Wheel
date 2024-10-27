@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spin Game</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
-<body>
 
-<div class="game-container">
-  <!-- Arrow pointing to the right initially -->
-  <div id="arrow">➡️</div>
-  
-  <!-- Spin Button -->
-  <button onclick="spinArrow()">SPIN</button>
+<body class="dark-theme">
 
-  <!-- Result Display -->
-  <p id="result"></p>
-</div>
+  <div class="game-container">
+    <!-- Arrow pointing to the right initially -->
+    <div id="arrow">➡️</div>
 
-<script src="script.js"></script>
+    <!-- Spin Button -->
+    <button onclick="spinArrow()">SPIN</button>
+
+    <!-- Spin count -->
+    <p id="spinCount">Spin Count: 0</p>
+
+    <!-- Reset Spin Button -->
+    <button onclick="resetGame()">RESET SPIN</button> <!-- Reset button added -->
+
+    <!-- Theme Toggle Button -->
+    <button onclick="toggleTheme()" id="theme-toggle">Toggle Theme</button>
+
+    <!-- Result Display -->
+    <div class="containerResult">
+      <p id="result"></p>
+    </div>
+  </div>
+
 </body>
+
 </html>
