@@ -9,7 +9,7 @@
   <script src="script.js"></script>
 </head>
 
-<body class="light-theme">
+<body class="dark-theme">
 
   <div class="game-container">
     <!-- Arrow pointing to the right initially -->
@@ -17,8 +17,9 @@
 
     <!-- Spin Button -->
     <button onclick="spinArrow()">SPIN</button>
-
-    <p id="spinCount">Spin Count: 0</p> <!-- New element for spin count -->
+    
+    <!-- Spin count -->
+    <p id="spinCount">Spin Count: 0</p>
 
     <!-- Reset Spin Button -->
     <button onclick="resetGame()">RESET SPIN</button> <!-- Reset button added -->
@@ -26,8 +27,10 @@
     <!-- Theme Toggle Button -->
     <button onclick="toggleTheme()" id="theme-toggle">Toggle Theme</button>
 
+    
     <!-- Result Display -->
     <p id="result"></p>
+    <div class="loading-indicator" id="loadingIndicator" style="display: none;">🔄 Loading...</div>
   </div>
 
 </body>
