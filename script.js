@@ -55,3 +55,9 @@ function resetGame() {
   arrowElement.style.transition = "none"; // Disable transition for instant reset
   arrowElement.style.transform = "rotate(0deg)"; // Reset rotation
 }
+
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle("dark-theme");
+  body.classList.toggle("light-theme");
+}
